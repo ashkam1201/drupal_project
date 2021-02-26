@@ -1,0 +1,77 @@
+<div class="container-xxl my-md-4 bd-layout">
+  <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+    {% block head %}
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        {{ page.header }}
+        {% if page.main_menu or page.searchbox %}
+          <button class="navbar-toggler navbar-toggler-right"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#CollapsingNavbar"
+                  aria-controls="CollapsingNavbar"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
+            {{ page.main_menu }}
+            {% if page.searchbox %}
+              <div class="form-inline navbar-form justify-content-end">
+                {{ page.searchbox }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      </nav>
+    {% endblock %}
+  </header>
+
+  {% if page.admin_tools %}
+    <div class="region-admin-tools">
+      {{ page.admin_tools }}
+    </div>
+  {% endif %}
+
+  {% if page.breadcrumb %}
+    <div class="region-breadcrumb">
+      {{ page.breadcrumb }}
+    </div>
+  {% endif %}
+
+  {% if page.highlighted %}
+    <div class="highlighted">
+      <aside class="{{ container }} section clearfix" role="complementary">
+        {{ page.highlighted }}
+      </aside>
+    </div>
+  {% endif %}
+
+  {% if page.help %}
+    <div class="region-help">
+      <div class="box">
+        {{ page.help }}
+      </div>
+    </div>
+  {% endif %}
+
+  <main role="main">
+
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    {% if page.content %}
+      <div class="region-content">
+        {{ page.content }}
+      </div>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer class="region-footer">
+      <div class="box">
+        {{ page.footer }}
+      </div>
+    </footer>
+  {% endif %}
+
+</div>

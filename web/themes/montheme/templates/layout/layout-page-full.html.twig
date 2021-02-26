@@ -1,0 +1,23 @@
+{% set classes = [
+  'container',
+  'content-type',
+  'article',
+  'full'
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+
+  <div class="article-title">
+    {{ content.title }}
+  </div>
+
+  <div class="row">
+    <div class="col article-picture">
+      {{ content.picture }}
+    </div>
+    <div class="col article-content">
+      {{ content.content }}
+    </div>
+  </div>
+
+</div>

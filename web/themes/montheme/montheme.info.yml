@@ -1,0 +1,21 @@
+name: montheme
+base theme: stable
+description: ''
+type: theme
+package: Core
+core_version_requirement: ^8 || ^9
+
+regions:
+  header: Header
+  main_menu: Main Menu
+  searchbox: Search Box
+  admin_tools: 'Outils administration'
+  breadcrumb: Breadcrumbs
+  highlighted: Highlight
+  help: 'Help / Message'
+  content: 'Main content'
+  footer: Footer
+
+libraries:
+  - montheme/global-styling
+  - montheme/global-scripts

@@ -1,0 +1,13 @@
+layout-article-full:
+  label: Actualité full
+  category: montheme
+  path: templates/layout
+  template: layout-page-full
+  regions:
+    title:
+      label: Title
+    picture:
+      label: Picture
+    content:
+      label: Content
+
