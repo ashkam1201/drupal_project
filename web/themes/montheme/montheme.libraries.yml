@@ -3,6 +3,7 @@ global-styling:
   css:
     theme:
       build/css/style.css: {}
+      build/css/styleperso.css: {}
 
 global-scripts:
   version: 1.x
