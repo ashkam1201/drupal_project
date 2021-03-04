@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22efa7fa992ab3f44c4eef5a660e5351",
+    "content-hash": "07718093e295149caa3d1a049338a9f3",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1089,6 +1089,53 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/d8w3css",
+            "version": "1.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/d8w3css.git",
+                "reference": "8.x-1.19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/d8w3css-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "d0451e04b7bf29ab7c050e16f64800d1baea8740"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.19",
+                    "datestamp": "1610924534",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "drupalcare.com",
+                    "homepage": "https://www.drupal.org/user/3008363"
+                },
+                {
+                    "name": "flashwebcenter",
+                    "homepage": "https://www.drupal.org/user/1321114"
+                }
+            ],
+            "homepage": "https://www.drupal.org/project/d8w3css",
+            "support": {
+                "source": "https://git.drupalcode.org/project/d8w3css"
             }
         },
         {
